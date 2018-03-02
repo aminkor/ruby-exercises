@@ -11,11 +11,36 @@
 #   str = "zzzz"
 #   str.length == 4
 
-def longest_string(list)
-  # This is your job. :)
+def long_string(list)
+  max = list.first.length
+
+  lng_str = list.first
+
+  list.each do |item|
+    #puts item.length
+    if item.length > max
+      max = item.length
+      lng_str = item
+    end
+  end
+  return
+end
+#if __FILE__ == $PROGRAM_NAME
+print long_string(["a","zzz","cc"]), "\n"
+#end
+
+def longv2 (list)
+max = list.first.length
+str_max = list.first
+i = 0
+list.each do |item|
+ if item.length > max
+   max = item.length
+   str_max = item
+ end
+ i = i + 1
+end
+return str_max
 end
 
-if __FILE__ == $PROGRAM_NAME
-  # I'd advise putting some sanity checks here.
-  # How else will you be sure your code does what you think it does?
-end
+print longv2 (["a","zzz","cc"])

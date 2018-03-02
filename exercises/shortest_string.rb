@@ -3,11 +3,15 @@
 # Returns:     the shortest string in the list
 # Prints:      Nothing
 
-def shortest_string(list)
-  # This is your job. :)
+def long_string(list)
+  length_sf = list.first.length
+  longest_string = list.first
+  list.each do |item|
+    if item.length < length_sf.to_i
+      longest_string = list[item]
+    end
+    return longest_string
+  end
 end
-
-if __FILE__ == $PROGRAM_NAME
-  # I'd advise putting some sanity checks here.
-  # How else will you be sure your code does what you think it does?
-end
+#if __FILE__ == $PROGRAM_NAME
+print long_string(["a","zzz","c"]), "\n"
