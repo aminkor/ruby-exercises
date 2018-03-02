@@ -13,14 +13,24 @@
 # This is going to be very similar to max, so don't be afraid if
 # these two methods look almost identical
 def min(list)
-  ____ = ____
-  ____.each do |____|
-    if ____
-      ____ = ____
-    end
-  end
 
-  return ____
+  #____ = ____
+  #____.each do |____|
+    #if ____
+     # ____ = ____
+    #end
+  #end
+
+  #return ____
+
+  min = list.first
+    list.each do |i|
+
+      if i < min
+        min = i
+      end
+    end
+    return min
 end
 
 if __FILE__ == $PROGRAM_NAME
