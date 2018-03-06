@@ -20,10 +20,13 @@
 # replacement schemes to "encrypt" his communication.
 
 def rot13(string)
+	return string.tr("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm")
 end
 
 if __FILE__ == $PROGRAM_NAME
   # See http://www.rot-n.com/ to generate test inputs and outputs
-  p rot13("The Quick Brown Fox Jumps Over The Lazy Dog") ==
-    "Gur Dhvpx Oebja Sbk Whzcf Bire Gur Ynml Qbt"
+  #p rot13("The Quick Brown Fox Jumps Over The Lazy Dog") ==
+   # "Gur Dhvpx Oebja Sbk Whzcf Bire Gur Ynml Qbt"
+   p rot13("najwairina")
+   p rot13(rot13("najwairina"))
 end

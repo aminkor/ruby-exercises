@@ -23,6 +23,12 @@ def print_line(count)
 end
 
 def print_triangle(height)
+
+  height = 1
+  (1..n).each do |number|
+  number
+end
+height += number
   # You have to fill in the details here.
 end
 

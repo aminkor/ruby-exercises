@@ -18,9 +18,16 @@
 # We can now use the "print_triangle" and "print_line" methods we defined
 # there -- as if we defined them here!
 
-require_relative "./print_triangle"
+#require_relative "./print_triangle"
 
 def print_pyramid(height)
+
+	def print_star
+		space = 10
+		(0...5).each do |i|
+			(0..space).each.do
+			printf ""
+			
   # This is your job. :)
   # Suggestion: you can call print_triangle to print out the first, "upward"
   # half of the pyramid. You'll have to write code to print out the second,

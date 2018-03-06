@@ -14,7 +14,15 @@
 #
 
 def factorial(n)
+	if n == 0
+		1
+	else
+		n * factorial(n-1)
+	end
+
 end
+
+p factorial(ARGV[0].to_i)
 
 if __FILE__ == $PROGRAM_NAME
   # What are the common cases?  What are the corner cases?

@@ -16,6 +16,13 @@
 # Break it down as clearly as you can in your own head first.
 
 def mode(array)
+  counter = Hash.new(0)
+
+  array.each do |i|
+    counter[i] += 1
+  end
+mode_array = []
+counter.each do
 end
 
 if __FILE__ == $PROGRAM_NAME

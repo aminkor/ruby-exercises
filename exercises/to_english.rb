@@ -21,7 +21,18 @@
 # if you can find ways to combine simpler patterns into larger ones.
 
 def to_english(string)
-end
+
+	hash = {0 => "zero"},
+			1 => "one",
+			2 => "two",
+			3 => "three",
+			4 => "four",
+			5 => "five"
+		}
+
+	if hash.hash.key?(string)
+		return hash [string]
+	end
 
 if __FILE__ == $PROGRAM_NAME
   # Hey, there are a bunch of lovely test cases above.  Start with those. :)

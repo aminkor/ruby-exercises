@@ -10,6 +10,10 @@
 #  find_even([10,10,10,11,11,11]) == [10,10,10]
 
 def find_even(array)
+  array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  array.each { |value| puts value if value.to_f%2==0}
+
+  
 end
 
 # Note #1

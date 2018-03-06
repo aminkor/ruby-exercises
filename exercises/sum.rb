@@ -20,7 +20,21 @@
 #   total = total + 70   # the value of "total" is now 102
 
 def sum(list)
+
+	total = 0
+
+  i = 0
+  while i < list.count
+    total += list[i]
+
+    i += 1
+  end
+
+
+    return total
+
   # This is your job. :)
+  
 end
 
 if __FILE__ == $PROGRAM_NAME

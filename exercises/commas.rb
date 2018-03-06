@@ -20,10 +20,32 @@
 # insert the commas?  Which comma would you insert first?
 
 def commas(num)
+	string = num.abs.to_s
+	if string.length <= 3
+		return string
+	else
+		array_comma = []
+		array = string.split(//)
+		array.reversed = array.reverse
+		array_reversed.each_index do [i]
+			array_comma.push(array_reversed[i])
+			if i%3 == 2
+				array_comma.push(",")
+			end
+		end
+end
+
+if num < 0
+	array_comma.push("-")
 end
 
 if __FILE__ == $PROGRAM_NAME
-  # What are the common cases?  What are the corner cases?
+
+	p commas(1)		
+	p commas(100)
+	p commas(1000)
+	p commas(10000)  
+	# What are the common cases?  What are the corner cases?
   # Your sanity checks should look like
   #   p commas(input) == ...expected return value...
 end

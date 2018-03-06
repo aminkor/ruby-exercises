@@ -9,6 +9,15 @@
 # that there is at least one.
 
 def word_count(string)
+
+  count = 0
+  substrings = []
+  substrings = string.split
+  substrings
+
+  count = substrings.size
+  count
+  
   # Hint: You'll want to use String#split
   # See: http://www.ruby-doc.org/core-2.1.2/String.html#method-i-split
 end
@@ -21,6 +30,8 @@ if __FILE__ == $PROGRAM_NAME
   p word_count("No-spaces-here") == 1
   p word_count("") == 0  # Empty string
   p word_count(" ") == 0 # A string consisting of a single space
+
+
 
   # It's probably worth having a few more sanity checks.
   # What are some input strings that might be tricky to handle?

@@ -21,9 +21,21 @@
 #  array == [1,2,3,"waffles"]
 
 def pad_array(array, min_size, pad_with)
+
+  pad_array([1, 2, 3], 5, "waffles") == [1, 2, 3, "waffles","waffles"]
+  pad_array([1, 2, 3], 4, "waffles") == [1, 2, 3, "waffles"]
+  pad_array([1, 2, 3], 3, "waffles") == [1, 2, 3]
+
+  array = [1, 2, 3]
+  array.push("waffles")
+  array == [1, 2, 3, "waffles"]
 end
 
 if __FILE__ == $PROGRAM_NAME
+
+  if min_size == 0
+    return array
+  end
   # Here are some sanity checks written in "plain English".
   # See if you can translate them into Ruby. Your checks should look like
   #

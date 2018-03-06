@@ -13,6 +13,8 @@
 # every single case.
 
 def to_roman(num)
+	final =""
+	
 end
 
 if __FILE__ == $PROGRAM_NAME

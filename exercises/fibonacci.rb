@@ -28,7 +28,10 @@
 # inputs.  Don't worry if it can't.
 
 def fib(n)
+  return n if n <= 1
+  ( fib( n - 1 ) + fib( n - 2 ) )
 end
+puts fib( 10 )
 
 if __FILE__ == $PROGRAM_NAME
   # Here are our sanity checks with justification.
