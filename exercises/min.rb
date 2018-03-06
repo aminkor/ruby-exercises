@@ -13,9 +13,15 @@
 # This is going to be very similar to max, so don't be afraid if
 # these two methods look almost identical
 def min(list)
+<<<<<<< HEAD
    small_one = list.first #min = list.first
   list.each do |item|
     if item < small_one
+=======
+   small_one = list.first
+  list.each do |item|
+    if item > small_one
+>>>>>>> dev_najwa
       small_one = item
     end
   end

@@ -13,7 +13,11 @@
 
 def longest_string(list)
   # This is your job. :)
+<<<<<<< HEAD
   longest_str = list.first 
+=======
+  longest_str = list.first
+>>>>>>> dev_najwa
   list.each do |item|
   	if longest_str.length < item.length
   		longest_str = item
